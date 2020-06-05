@@ -1,49 +1,95 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
-    <title>Tim Torndals Hemsida</title>
-    
-    <link rel="stylesheet"type="text/css" href="test.css">
-
-    <style>
-    #mytitle {
-        background-color: red;
-        color: black;
-        padding: 40px;
-        text-align: center;
+<title>Tims Lekhemsida</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+        box-sizing: border-box;
     }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+  background-color:red;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: cadetblue;
+    height: 300px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: crimson;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 600px;) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
 </style>
-
 </head>
-    
-<Body> 
-    <div id="någotkul">
-    <h1 id="mytitle">Tim Torndal</h1>
+<body>
+<h2>Tim Torndal</h2>
+<p>So This my weabsite..... just trying some things.</p>
+<p>So here you can find a few things about me...</p>
 
-        <img id="Tim" src="images/IMG_4530.jpg" alt="Tim" width="1650px;">
-        
-    </div>
-    <p style="font-size: 40px;">Om mig</p>
-    <p style="font-size: 40px;">Sport</p>
-    <p style="font-size: 40px;">D&D</p>
-    <p style="font-size: 40px;">Intressen</p>
+<header>
+    <h2>Timhavingfun</h2>
+</header>
+    <section>
+<nav>
+    <ul>
+        <li><a href="#">about me</a></li>
+        <li><a href="#">about you</a></li>
+        <li><a href="#">you cant press this link</a></li>
+    </ul>
+</nav>
 
+<article>
+    <h1>about me</h1>
+    <p>I am a little kid that likes dnd and karate.</p>
+</article>
+</section>
 
-</Body>
-
-
-
-
-
-
-
-
-</html>
-
-
-
+<Footer>
+    <p> Btw this is a work in progress....</p>
+</Footer>   
+</body>
 
 
